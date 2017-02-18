@@ -5,7 +5,7 @@
 	<title>IMG Crypt</title>
 </head>
 <body oncontextmenu="return false">
-	<img class="img-crypt" draggable="false" data-rel="<?php echo base64_encode(FCPATH . 'Avatar.jpg') ?>" data-time="<?php echo microtime(true) ?>"/>
+	<img class="img-crypt" draggable="false" data-rel="<?php echo base64_encode(FCPATH . 'test-image.jpg') ?>" data-time="<?php echo microtime(true) ?>"/>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
