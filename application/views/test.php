@@ -5,7 +5,7 @@
 	<title>IMG Encode</title>
 </head>
 <body oncontextmenu="return false">
-	<img class="img-crypt" draggable="false" data-rel="<?php echo base64_encode(FCPATH . 'test-image.jpg') ?>" data-time="<?php echo microtime(true) ?>"/>
+	<img class="img-encode" draggable="false" data-rel="<?php echo base64_encode(FCPATH . 'test-image.jpg') ?>" data-time="<?php echo microtime(true) ?>"/>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
@@ -13,7 +13,7 @@ var base_url = '<?php echo base_url() ?>';
 
 $().ready(function () {
 
-	$.each($('.img-crypt'), function() {
+	$.each($('.img-encode'), function() {
 
 		var me = $(this);
 
@@ -28,7 +28,7 @@ $().ready(function () {
 		});
 	});
 	
-	$('.img-crypt').on('dragstart', function(event) { event.preventDefault(); });
+	$('.img-encode').on('dragstart', function(event) { event.preventDefault(); });
 });
 </script>
 </html>
