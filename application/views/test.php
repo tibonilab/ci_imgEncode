@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>IMG Crypt</title>
+	<title>IMG Encode</title>
 </head>
 <body oncontextmenu="return false">
 	<img class="img-crypt" draggable="false" data-rel="<?php echo base64_encode(FCPATH . 'test-image.jpg') ?>" data-time="<?php echo microtime(true) ?>"/>
