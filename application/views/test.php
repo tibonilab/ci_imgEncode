@@ -9,7 +9,6 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>
-
 var base_url = '<?php echo base_url() ?>';
 
 $().ready(function () {
@@ -26,13 +25,10 @@ $().ready(function () {
 		
 		$.ajax(params).done(function (r) {
 			me.attr('src', r);
-		})
-
-	})
+		});
+	});
 	
 	$('.img-crypt').on('dragstart', function(event) { event.preventDefault(); });
-
-})
-
+});
 </script>
 </html>
